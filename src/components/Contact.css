@@ -1,0 +1,42 @@
+.contact-section {
+  background: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  animation: contactFadeIn 1.5s;
+}
+.contact-section h2 {
+  color: #1e3c72;
+  margin-bottom: 2rem;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2a5298;
+  text-decoration: none;
+  font-size: 1.1rem;
+  background: #f7f9fa;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #0001;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.contact-links a:hover {
+  background: #2a5298;
+  color: #fff;
+  box-shadow: 0 6px 24px #1e3c7233;
+}
+.contact-icon {
+  width: 28px;
+  height: 28px;
+}
+@keyframes contactFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+} 

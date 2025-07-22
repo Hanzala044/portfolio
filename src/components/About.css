@@ -1,0 +1,40 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  background: #f7f9fa;
+  animation: aboutFadeIn 1.5s;
+}
+.about-img-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 40px;
+  box-shadow: 0 4px 24px #0002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about-content {
+  max-width: 500px;
+}
+.about-content h2 {
+  margin-bottom: 0.5rem;
+  color: #1e3c72;
+}
+.about-content p {
+  color: #333;
+  font-size: 1.1rem;
+}
+@keyframes aboutFadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+} 

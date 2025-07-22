@@ -1,0 +1,71 @@
+.projects-section {
+  background: #f7f9fa;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  animation: projectsFadeIn 1.5s;
+}
+.projects-section h2 {
+  color: #1e3c72;
+  margin-bottom: 2rem;
+}
+.projects-loading {
+  font-size: 1.2rem;
+  color: #2a5298;
+  margin-top: 2rem;
+  animation: loadingBlink 1s infinite alternate;
+}
+.projects-error {
+  color: #d32f2f;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 2rem;
+}
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 22px 28px;
+  min-width: 220px;
+  max-width: 320px;
+  text-align: left;
+  text-decoration: none;
+  color: #1e3c72;
+  transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
+  animation: cardPop 0.7s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 6px 24px #1e3c7233;
+  color: #2a5298;
+}
+.project-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.project-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+@keyframes loadingBlink {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+@keyframes projectsFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes cardPop {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+} 
